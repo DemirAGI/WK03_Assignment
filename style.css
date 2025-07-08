@@ -1,3 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: blue;
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    background-color: #F7F7F7;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #DFE3EB;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px; /* Logo height, 2x menu item height */
+}
+
+nav {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #6F2F9F;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    line-height: 30px; /* Menu item height */
+    font-weight: 600;
+}
+
+/* Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#section1 {
+    background-image: url('https://picsum.photos/1920/1080');
+}
+
+#section2 {
+    background-image: url('https://picsum.photos/1920/1080');
+}
+
+#section3 {
+    background-image: url ("https://picsum.photos/1920/1080");
+}
+
+.section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin: 10px 0;
+    color: #6F2F9F;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin: 10px 0;
+    color: #6F2F9F;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9B51E0;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: #6F2F9F;
+    color: #FFFFFF;
+    text-align: right;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #2EA3F2;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .section h1 {
+        font-size: 36px;
+    }
+    .section h2 {
+        font-size: 18px;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    nav a {
+        margin: 5px 15px;
+    }
 }
